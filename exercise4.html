@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise 4</title>
+    <style>
+        :root{
+            --color: teal;
+            --seccolor:white;
+            --dfpad:30px;
+        }
+        .navbar{
+            background-color:var(--color) ;
+            color: var(--seccolor);
+            border: 2px solid black;
+            margin: 20px;
+            padding: var(--dfpad);
+            height: 40px;
+         }
+         .theme-button{
+            margin: 20px;
+         }
+         .button-red{
+            background-color: red;
+            color: white; 
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+         }
+         .button-green{
+            background-color:green;
+            color: white; 
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+         }
+         .button-dark{
+            background-color: #333;
+            color: white; 
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+         }
+
+    </style>
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+        <li>home</li>
+        <li>about</li>
+        <li> phone</li>
+    </ul>
+    <div class="theme-button">
+        <button class="button-red">red theme</button>
+        <button class="button-green">green theme</button>
+        <button class="button-dark">dark theme</button>
+    </div>
+  </div>
+</body>
+</html>
