@@ -1,68 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>exercise 4</title>
+    <title></title>
     <style>
-        :root{
-            --color: teal;
-            --seccolor:white;
-            --dfpad:30px;
-        }
-        .navbar{
-            background-color:var(--color) ;
-            color: var(--seccolor);
-            border: 2px solid black;
-            margin: 20px;
-            padding: var(--dfpad);
-            height: 40px;
-         }
-         .theme-button{
-            margin: 20px;
-         }
-         .button-red{
-            background-color: red;
-            color: white; 
-            padding: 8px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-right: 10px;
-         }
-         .button-green{
-            background-color:green;
-            color: white; 
-            padding: 8px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-right: 10px;
-         }
-         .button-dark{
-            background-color: #333;
-            color: white; 
-            padding: 8px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-right: 10px;
-         }
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Puritan:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <style>
+        /* :root {
+            --primary-color: #aa71df;
+            --text-color: white;
+            --secondry-color: #c4b2d6;
+        } */
 
+         :root {
+            --primary-color: #19b340;
+            --text-color: white;
+            --secondry-color: #5c5166;
+        }
+
+        body {
+            background-color: var(--secondry-color);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Nanum Gothic", sans-serif;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 12px 0;
+        }
+
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 23px;
+            font-weight: bolder;
+
+        }
+
+        ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
     </style>
 </head>
+
 <body>
-  <div class="navbar">
-    <ul>
-        <li>home</li>
-        <li>about</li>
-        <li> phone</li>
-    </ul>
-    <div class="theme-button">
-        <button class="button-red">red theme</button>
-        <button class="button-green">green theme</button>
-        <button class="button-dark">dark theme</button>
-    </div>
-  </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/"></li>
+                <li><a href="/">about</a></li>
+                <li><a href="/">services</a></li>
+                <li><a href="/">comtract us</a></li>
+            </ul>
+        </nav>
+    </header>
 </body>
+
 </html>
