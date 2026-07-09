@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS ANIMATION</title>
+    <style>
+        .container{
+            background-color: rgb(9, 106, 106);
+            width: 30vw;
+            height: 80vh;
+        }
+        .box{
+            width: 34px;
+            height: 45px;
+            
+            /* animation-name: skanimation;
+            animation-duration: 1s;
+            animation-iteration-count:4 ;
+            animation-timing-function: cubic-bezier(0, 0, 0.9, 0.1);
+            animation-delay: 2s;
+            animation-direction: reverse;
+            animation-play-state: paused; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: skanimation 2s  ease-in-out 3s 1,
+            sk2 3s ease-in-out 3s 1;
+
+
+        }
+        @keyframes skanimation {
+            from{
+background-color: red;
+            }
+            to{
+                background-color: yellow;
+                transform: translateX(1000px);
+            }
+
+        }
+        @keyframes sk2{
+            0%{
+transform: rotate(100deg);
+            }
+            20%{
+                transform: rotate(200deg);
+            }
+             50%{
+                 transform: rotate(220deg);
+            } 
+            80%{
+                 transform: rotate(300deg);
+            } 
+            100%{
+                 transform: rotate(310deg);
+            }
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+</html>
