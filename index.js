@@ -1,43 +1,37 @@
-console.log("hello iam conditional tutorial")
+console.log("I am a tutorial on loops")
 
-let age =0;
-// let grace = 2;
+let a = 1;
+// console.log(a)
+// console.log(a+1)
+// console.log(a+2)
 
-// age += grace
-// console.log(age)
-// console.log(age + grace)
-// console.log(age - grace)
-// console.log(age * grace)
-// console.log(age / grace)
-// console.log(age ** grace)
-// console.log(age % grace)
+// for (let i = 0; i < 100; i++) {
+//     console.log(a + i)
+// }
 
-if(age==18) {
-    console.log("you can drive");
-}
+// let obj = {
+//     name: "Aleem",
+//     role: "Programer",
+//     company: "Aleem sk AI"
+// }
 
-else if(age==1){
-console.log("are you kidding")
-}
-else if(age==0){
-console.log("are you aggain kidding me")
-}
+// for (const key in obj) {
+//     console.log(key)
 
+// }
 
-else{
-    console.log("you cannot drive");
-}
+// for (const c of "ALEEM") {
+//     console.log(c)
+// }
 
-a = 6
-b = 8
-let c = a > b? (a - b): (b - a);
-/*
-translate to:
-if(a>b){
-let c = a - b;
-}
+// let i = 5
+// while (i < 6) {
+//     console.log(i)
+//     i++;
+// }
 
-else {
-     let c = b - a
-}
-     */
+let i = 0
+do {
+     console.log(i)
+     i++;
+} while (i<6);
