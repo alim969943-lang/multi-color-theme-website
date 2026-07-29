@@ -1,37 +1,27 @@
-console.log("I am a tutorial on loops")
+function nice(name) {
+    console.log("hey " + name + " you are nice!")
+    console.log("hey " + name + " you are good!")
+    console.log("hey " + name + " your tshirt is nice!")
+    console.log("hey " + name + " your practice is good!")
+}
 
-let a = 1;
-// console.log(a)
-// console.log(a+1)
-// console.log(a+2)
+function sum(a, b, c = 4) {
+    // console.log(a + b)
+    return a + b + c
+}
 
-// for (let i = 0; i < 100; i++) {
-//     console.log(a + i)
-// }
+result1 = sum(3, 5)
+result2 = sum(3, 15)
+result3 = sum(12, 5, 1)
 
-// let obj = {
-//     name: "Aleem",
-//     role: "Programer",
-//     company: "Aleem sk AI"
-// }
+console.log("the sum of these number is: ", result1)
+console.log("the sum of these number is: ", result2)
+console.log("the sum of these number is: ", result3)
 
-// for (const key in obj) {
-//     console.log(key)
+const func1 = (x) => {
+    console.log("iam an arrow function", x)
+}
 
-// }
-
-// for (const c of "ALEEM") {
-//     console.log(c)
-// }
-
-// let i = 5
-// while (i < 6) {
-//     console.log(i)
-//     i++;
-// }
-
-let i = 0
-do {
-     console.log(i)
-     i++;
-} while (i<6);
+func1(34);
+func1(64);
+func1(33);
