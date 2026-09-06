@@ -1,15 +1,13 @@
-console.log("hello")
+let button = document.getElementById("btn")
 
-// let boxes = document.getElementsByClassName("box")
-// console.log (boxes)
+button.addEventListener("dblclick", ()=>{
+document.querySelector(".box").innerHTML = "<b> yayy you were  clicked </b>enjoy your clicke!"
+})
 
-// boxes[2].style.backgroundColor = "red"
+button.addEventListener("contextmenu", ()=>{
+alert("Dont hack us by Right click please")
+})
 
-// document.getElementById("redbox").style.backgroundColor ="red"
-
-// document.querySelector(".box").style.backgroundColor ="green";
-console.log(document.querySelectorAll(".box"))
-
-document.querySelectorAll(".box").forEach(e =>{
-    e.style.backgroundColor ="green";
+document.addEventListener("keydown", (e)=>{
+console.log(e)
 })
