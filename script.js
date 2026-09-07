@@ -1,13 +1,31 @@
-let button = document.getElementById("btn")
+console.log("harry is a hacker")
+console.log("rohan is a hecker")
 
-button.addEventListener("dblclick", ()=>{
-document.querySelector(".box").innerHTML = "<b> yayy you were  clicked </b>enjoy your clicke!"
-})
+setTimeout(() => {
+    console.log("I am inside settimeout")
+}, 0);
 
-button.addEventListener("contextmenu", ()=>{
-alert("Dont hack us by Right click please")
-})
+setTimeout(() => {
+    console.log("I am inside settimeout 2")
+}, 0);
 
-document.addEventListener("keydown", (e)=>{
-console.log(e)
-})
+console.log("The End")
+
+const fn =() => {
+    console.log("nothing")
+}
+
+const callback = (arg, fn, ) => {
+    console.log(arg)
+fn()
+
+}
+
+const loadscript = (src, callback) => {
+    let sc = document.createElement("scripts");
+    sc.src = src;
+    sc.onload = callback("aleem", fn);
+    document.head.append(sc)
+}
+
+loadscript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js", callback)
