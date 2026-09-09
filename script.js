@@ -1,31 +1,40 @@
-console.log("harry is a hacker")
-console.log("rohan is a hecker")
+// async function getdata() {
+//     stimulate getting data from a server
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(455)
+//         }, 3500);
+//     })
+// }
 
-setTimeout(() => {
-    console.log("I am inside settimeout")
-}, 0);
-
-setTimeout(() => {
-    console.log("I am inside settimeout 2")
-}, 0);
-
-console.log("The End")
-
-const fn =() => {
-    console.log("nothing")
+async function getdata() {
+    // stimulate getting data from a server
+    let x = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+    let data = await x.json()
+    return data
 }
 
-const callback = (arg, fn, ) => {
-    console.log(arg)
-fn()
+async function main() {
 
+    console.log("loding moduls")
+
+    console.log("Do something else")
+
+    console.log("Load data")
+
+    let data = await getdata()
+
+    console.log(data)
+
+    console.log("process data")
+
+    console.log("task 2")
 }
+main()
+// data.then((v) => {
 
-const loadscript = (src, callback) => {
-    let sc = document.createElement("scripts");
-    sc.src = src;
-    sc.onload = callback("aleem", fn);
-    document.head.append(sc)
-}
+//     console.log(data)
 
-loadscript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js", callback)
+//     console.log("Process data")
+
+// })
