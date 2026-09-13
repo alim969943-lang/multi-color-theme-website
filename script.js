@@ -1,40 +1,26 @@
-// async function getdata() {
-//     stimulate getting data from a server
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             resolve(455)
-//         }, 3500);
-//     })
-// }
+let a = prompt("Enter first number")
 
-async function getdata() {
-    // stimulate getting data from a server
-    let x = await fetch('https://jsonplaceholder.typicode.com/todos/1')
-    let data = await x.json()
-    return data
+let b = prompt("Enter second number")
+if (isNaN(a) || isNaN(b)) {
+    throw SyntaxError("Sorry this is not allowed")
 }
 
-async function main() {
+let sum = parseInt(a) + parseInt(b)
 
-    console.log("loding moduls")
+function main() {
+    let x = 1;
+    try {
+        console.log("the sum is", sum * x)
+        return true
+    } catch (error) {
+        console.log("Error aagaya bhai")
+        return false
+    }
+    finally {
+        console.log("files are being closed and dp connection is closed")
+    }
 
-    console.log("Do something else")
 
-    console.log("Load data")
-
-    let data = await getdata()
-
-    console.log(data)
-
-    console.log("process data")
-
-    console.log("task 2")
 }
-main()
-// data.then((v) => {
 
-//     console.log(data)
-
-//     console.log("Process data")
-
-// })
+let c = main()
