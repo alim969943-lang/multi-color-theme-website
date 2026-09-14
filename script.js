@@ -1,26 +1,48 @@
-let a = prompt("Enter first number")
+// let obj = {
+//     a:1,
+//     b:"harry"
+// }
 
-let b = prompt("Enter second number")
-if (isNaN(a) || isNaN(b)) {
-    throw SyntaxError("Sorry this is not allowed")
+// console.log(obj)
+
+// let animal = {
+//     eats: true
+// };
+
+// let rabbit = {
+//     jumps:true
+// };
+
+// rabbit.__proto__ = animal;
+
+class Animal {
+    constructor(name){
+        this.name = name
+        console.log("object is created...")
+    }
+
+    eats(){
+        console.log("kha raha hu")
+    }
+
+    jumps(){
+        console.log("kood raha hu")
+    }
 }
 
-let sum = parseInt(a) + parseInt(b)
-
-function main() {
-    let x = 1;
-    try {
-        console.log("the sum is", sum * x)
-        return true
-    } catch (error) {
-        console.log("Error aagaya bhai")
-        return false
+class lion extends Animal {
+     constructor(name){
+        super(name)
+        console.log("object is and he is a lion...")
     }
-    finally {
-        console.log("files are being closed and dp connection is closed")
+       eats(){
+        super.eats()
+        console.log("kha raha hu roar")
     }
-
-
 }
 
-let c = main()
+let a = new Animal("bunny");
+console.log(a)
+
+let l = new lion ("shera")
+console.log(l)
