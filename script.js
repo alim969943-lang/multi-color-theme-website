@@ -1,48 +1,34 @@
-// let obj = {
-//     a:1,
-//     b:"harry"
-// }
-
-// console.log(obj)
-
-// let animal = {
-//     eats: true
-// };
-
-// let rabbit = {
-//     jumps:true
-// };
-
-// rabbit.__proto__ = animal;
-
-class Animal {
-    constructor(name){
-        this.name = name
-        console.log("object is created...")
-    }
-
-    eats(){
-        console.log("kha raha hu")
-    }
-
-    jumps(){
-        console.log("kood raha hu")
-    }
+async function sleep() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(45)
+        }, 1000);
+    })
 }
-
-class lion extends Animal {
-     constructor(name){
-        super(name)
-        console.log("object is and he is a lion...")
-    }
-       eats(){
-        super.eats()
-        console.log("kha raha hu roar")
-    }
+function sum(a, b, c) {
+    return a + b + c
 }
+(async function main() {
+    // let a = await sleep()
+    // console.log(a)
+    // let b = await sleep()
+    // console.log(b);
 
-let a = new Animal("bunny");
-console.log(a)
+    //    let [x, y, ...rest] = [1, 5, 7, 8, 9, 10]
+    //     console.log(x, y, rest)
 
-let l = new lion ("shera")
-console.log(l)
+
+    let obj = {
+        a: 1,
+        b: 2,
+        c: 3
+    }
+
+    let { a, b } = obj
+    console.log(a, b)
+
+    let arr = [1, 4, 6]
+    console.log(sum(arr[0], arr[1], arr[2]))
+    console.log(sum(...arr))
+
+})()
